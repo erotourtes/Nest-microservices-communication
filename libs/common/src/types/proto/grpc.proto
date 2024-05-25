@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package grpc;
+
+service GrpcService {
+    rpc GrpcMethod (GrpcRequest) returns (GrpcResponse);
+    rpc GrpcMethodStream (GrpcRequest) returns (stream GrpcResponse);
+}
+
+message GrpcRequest {
+    string message = 1;
+    repeated string meta = 2;
+    optional string name = 3;
+}
+
+message GrpcResponse {
+    string message = 1;
+}
