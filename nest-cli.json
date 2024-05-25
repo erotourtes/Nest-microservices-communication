@@ -18,7 +18,7 @@
       "compilerOptions": {
         "tsConfigPath": "apps/microservices/tsconfig.app.json",
         "assets": [
-          "**/*.proto"
+          "../../../libs/**/*.proto"
         ],
         "watchAssets": true
       }
@@ -29,7 +29,11 @@
       "entryFile": "main",
       "sourceRoot": "apps/grpc/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/grpc/tsconfig.app.json"
+        "tsConfigPath": "apps/grpc/tsconfig.app.json",
+        "assets": [
+          "../../../libs/**/*.proto"
+        ],
+        "watchAssets": true
       }
     },
     "common": {
