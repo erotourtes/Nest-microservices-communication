@@ -17,3 +17,11 @@ nest g app rabbitmq
 ```
 
 Open [regular](http://localhost:3000/rmq?msg="hello")
+
+
+## CQRS
+```fish
+pnpm run start:dev cqrs
+```
+
+Open [create](http://localhost:3005/cqrs?msg="hello"), [get](http://localhost:3005/cqrs/0)
