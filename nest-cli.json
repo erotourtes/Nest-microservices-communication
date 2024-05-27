@@ -62,6 +62,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/cqrs/tsconfig.app.json"
       }
+    },
+    "graphql": {
+      "type": "application",
+      "root": "apps/graphql",
+      "entryFile": "main",
+      "sourceRoot": "apps/graphql/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/graphql/tsconfig.app.json"
+      }
     }
   }
 }
